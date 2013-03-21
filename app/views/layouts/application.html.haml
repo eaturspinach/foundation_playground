@@ -3,7 +3,26 @@
   %head
     %title FoundationPlayground
     = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    = yield
+    .row
+      .twelve.columns
+        #main
+          = yield
+          #myModal.reveal-modal
+            %h2 Awesome I have it.
+            %p.lead Your couch.  It is imine.
+            %p I'm a cool paragraph
+            %a.close-reveal-modal &#215;
+          %a{:href => "#", "data-reveal-id"=> "myModal"} Click Me for a modal
+
+          .row
+            .small-12.large-7.columns
+              #row-left
+                row left
+            .small-12.large-5.columns
+              #row-right
+                row right
+      = javascript_include_tag "application"
+      :javascript
+        $(document).foundation();
