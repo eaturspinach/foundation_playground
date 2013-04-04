@@ -2,7 +2,7 @@
 development:
   adapter: postgresql
   database: foundation_playground_dev
-  username: root
+  username: 
   password: 
   host: localhost
   port: 5432
@@ -23,7 +23,7 @@ development:
 test:
   adapter: postgresql
   database: foundation_playground_test
-  username: root
+  username:
   password: 
   host: localhost
   port: 5432
