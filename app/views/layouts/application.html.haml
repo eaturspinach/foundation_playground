@@ -4,6 +4,14 @@
     %title FoundationPlayground
     = stylesheet_link_tag    "application", :media => "all"
     = csrf_meta_tags
+    / show app in full-screen mode
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    / viewport meta tag for responsive design
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0", user-scalable=0>
+    / remove Toolbars and make the Website iOS capable
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    / change the App Status Bar colour
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   %body
     .row
       .twelve.columns
